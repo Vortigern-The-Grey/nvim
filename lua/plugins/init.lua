@@ -74,18 +74,9 @@ return {
 	  opts = {}
   },
   {
-  	"chrisgrieser/nvim-tinygit",
-	  ft = { "git_rebase", "gitcommit" }, -- so ftplugins are loaded
-	  dependencies = {
-		  "stevearc/dressing.nvim",
-		  "nvim-telescope/telescope.nvim", -- either telescope or fzf-lua
-		  -- "ibhagwan/fzf-lua",
-		  "rcarriga/nvim-notify", -- optional, but will lack some features without it
-	  },
-  },
-  {
     "folke/noice.nvim",
     event = "VeryLazy",
+    tag = "v4.4.7",
     opts = {
       -- add any options here
     },
@@ -97,5 +88,18 @@ return {
     --   If not available, we use `mini` as the fallback
     "rcarriga/nvim-notify",
     },
+  },
+  {
+    "rcarriga/nvim-notify",
+	  config = function()
+		  require("notify").setup({
+			  -- stages = "fade_in_slide_out",
+			  stages = "static",
+			  render = "compact",
+			  background_colour = "FloatShadow",
+			  timeout = 3000,
+		  })
+		  vim.notify = require("notify")
+	end,
   },
 }
