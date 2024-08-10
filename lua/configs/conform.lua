@@ -3,11 +3,11 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    python = { "ruff-lsp" },
+    python = { "ruff" },
   },
 
   -- format_on_save = {
-  s-- These options will be passed to conform.format()
+  -- These options will be passed to conform.format()
   --   timeout_ms = 500,
   --   lsp_fallback = true,
   -- },

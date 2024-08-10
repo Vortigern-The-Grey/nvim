@@ -66,4 +66,15 @@ M.ui = {
   },
 }
 
+M.mason = {
+  pkgs = {
+    "black",
+    "ruff",
+    "pyright",
+    "marksman",
+    "mypy",
+    "lua-language-server",
+  },
+}
+
 return M
