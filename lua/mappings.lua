@@ -15,6 +15,7 @@ map("n", "<leader>ms", "<cmd> :Mason <CR>")
 map("n", "<C-h>", function()
     require("pretty_hover").hover()
 end)
+map("n", "<leader>ma", "<cmd> :MasonInstallAll <CR>")
 
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
