@@ -16,6 +16,13 @@ map("n", "<C-h>", function()
     require("pretty_hover").hover()
 end)
 map("n", "<leader>ma", "<cmd> :MasonInstallAll <CR>")
+-- TODO: check if $XDG works 
+if package.config:sub(1, 1) == '\\' then
+    map("n", "<leader>cf", "<cmd> :cd $LOCALAPPDATA\\nvim <CR>")
+else
+    map("n", "<leader>cf", "<cmd> :cd ~/.config/nvim <CR>")
+end
+
 
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
