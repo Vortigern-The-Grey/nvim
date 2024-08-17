@@ -10,7 +10,7 @@ require("noice").setup {
       ["cmp.entry.get_documentation"] = true,
     },
     hover = { enabled = true }, -- <-- HERE!
-    signature = { enabled = true }, -- <-- HERE!
+    signature = { enabled = false }, -- <-- HERE!
   },
 }
 
