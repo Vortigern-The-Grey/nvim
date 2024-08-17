@@ -4,7 +4,8 @@ vim.g.mapleader = " "
 -- Neovide settings
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide here
-  vim.o.guifont = "CaskaydiaCove Nerd Font:h10" -- text below applies for VimScript
+  -- Change the font and size below to whatever you want, but it MUST BE A NERD FONT
+  vim.o.guifont = "CaskaydiaCove Nerd Font:h12" -- text below applies for VimScript
 end
 
 -- bootstrap lazy and all plugins
