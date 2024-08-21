@@ -21,7 +21,7 @@ if package.config:sub(1, 1) == '\\' then
 else
     map("n", "<leader>cf", "<cmd> :cd ~/.config/nvim <CR>")
 end
-
+map("n", "<leader>tg", "<cmd> :Telescope repo list <CR>")
 
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
