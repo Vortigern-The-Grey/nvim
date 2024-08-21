@@ -62,3 +62,19 @@ require("noice").setup({
   },
 })
 
+require("telescope").setup {
+  extensions = {
+    repo = {
+      list = {
+        fd_opts = {
+          "--no-ignore-vcs",
+        },
+        search_dirs = {
+          "C:\\Important\\Projects",
+        },
+      },
+    },
+  },
+}
+
+require("telescope").load_extension "repo"
