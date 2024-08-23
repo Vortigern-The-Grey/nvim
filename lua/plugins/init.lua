@@ -78,7 +78,6 @@ return {
       --   },
       -- },
     },
-    event = "VeryLazy",
     config = function()
       require("noice").setup {
         lsp = {
