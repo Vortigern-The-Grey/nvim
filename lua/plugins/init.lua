@@ -131,4 +131,11 @@ return {
       -- refer to the configuration section below
     },
   },
+  {
+    "Bekaboo/dropbar.nvim",
+    enabled = false,
+    requires = {
+      "nvim-telescope/telescope-fzf-native.nvim"
+    },
+  },
 }
