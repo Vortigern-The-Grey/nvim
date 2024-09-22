@@ -133,7 +133,7 @@ return {
   },
   {
     "Bekaboo/dropbar.nvim",
-    enabled = false,
+    lazy = false,
     requires = {
       "nvim-telescope/telescope-fzf-native.nvim"
     },

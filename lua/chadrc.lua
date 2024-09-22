@@ -6,6 +6,10 @@ local M = {}
 
 M.base46 = {
   theme = "catppuccin",
+  hl_add = {
+    WinBar = { bg = "NONE" },
+    WinBarNC = { bg = "NONE" },
+  },
 }
 
 M.ui = {
