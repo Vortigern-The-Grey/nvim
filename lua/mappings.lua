@@ -22,5 +22,13 @@ else
     map("n", "<leader>cf", "<cmd> :cd ~/.config/nvim <CR>")
 end
 map("n", "<leader>tg", "<cmd> :Telescope repo list <CR>")
+-- map( {"n", "i", "v"}, "<RightClick>", "<cmd>lua require('menu').open('default')<cr>")
+map("n", "<RightMouse>", function ()
+  local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+  require("menu").open(options, { mouse = true })
+end)
 
+map("n", "<leader>th", function ()
+  require("nvchad.themes").open { style = "bordered" }
+end)
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
