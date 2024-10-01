@@ -11,14 +11,7 @@ M.base46 = {
     WinBarNC = { bg = "NONE" },
   },
 }
-
-M.ui = {
-  statusline = {
-    theme = "minimal",
-    separator_style = "block",
-  },
-
-  nvdash = {
+M.nvdash = {
     load_on_startup = true,
     header = {
       -- "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠠⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
@@ -58,8 +51,16 @@ M.ui = {
       "      ⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⣤⣾⡿⠃    ",
       "⢀⣀⠀⣠⣀⣠⣾⣿⣿⡿⠛⠋⠉⠉⠉   ⠉⠉⠉⠉⠛⠻⣿⣿⣷⣄⣀⢿⡽⢻⣦",
       "⠻⠶⠾⠿⠿⠿⠋⠉   N E O V I M   ⠉⠻⠿⠿⠿⠿⠿⠋",
+      "                                 ",
     },
+}
+
+M.ui = {
+  statusline = {
+    theme = "minimal",
+    separator_style = "block",
   },
+
 }
 
 M.mason = {
