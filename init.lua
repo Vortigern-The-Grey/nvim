@@ -77,4 +77,6 @@ require("telescope").setup {
   },
 }
 
+require('nvim-fountain').setup()
+
 require("telescope").load_extension "repo"
