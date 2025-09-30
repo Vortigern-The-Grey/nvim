@@ -135,14 +135,14 @@ return {
     "Bekaboo/dropbar.nvim",
     lazy = false,
     requires = {
-      "nvim-telescope/telescope-fzf-native.nvim"
+      "nvim-telescope/telescope-fzf-native.nvim",
     },
   },
   {
     "00msjr/nvim-fountain",
-    ft = "fountain",  -- Lazy-load only for fountain files
+    ft = "fountain", -- Lazy-load only for fountain files
     config = function()
-      require("nvim-fountain").setup({
+      require("nvim-fountain").setup {
         -- Optional configuration
         keymaps = {
           next_scene = "]]",
@@ -153,7 +153,7 @@ return {
         export = {
           pdf = { options = "--overwrite --font Courier" },
         },
-      })
+      }
     end,
   },
   {
@@ -166,7 +166,7 @@ return {
       { "<leader>s", "<cmd>Store<cr>", desc = "Open Plugin Store" },
     },
     opts = {
-    -- optional configuration here
+      -- optional configuration here
     },
   },
 }
